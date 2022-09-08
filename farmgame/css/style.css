@@ -1,0 +1,285 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background: #FDFCEF;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.37em;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+.header {
+    padding-top: 60px;
+}
+
+.logo {
+    max-width: 145px;
+    display: block;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.hero-text .subtitle{
+    width: 360px;
+    margin: 30px 0;
+}
+
+.hero-image {
+    width: 465px;
+}
+
+.button {
+    background: #FF6861;
+    border-radius: 100px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 22px 0;
+    font-weight: 700;
+    line-height: 1.19em;
+    display: block;
+    width: 216px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    background: #ff5047;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 82px;
+}
+
+.features .container{
+    padding-top: 120px;
+}
+
+.features-container {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    margin: 0 auto
+}
+
+.feature {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+}
+
+.feature-digit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-digit img{
+    width: 73px;
+    height: 73px;
+}
+
+.feature-title {
+    font-size: 30px;
+    margin-bottom: 11px;
+}
+
+.action-wrap {
+    background: linear-gradient(102deg, #FFF6DF 17.38%, #FFDFDE 81.25%);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+    padding: 76px 125px 75px 122px;
+    gap: 101px;
+    justify-content: center;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.action-wrap img {
+    animation: 5s linear 0s normal none infinite running rot;
+}
+
+.hero-text {
+    width: 475px;
+}
+
+.hero-text h2 {
+    text-align:left;
+    margin-bottom: 0;
+}
+
+.action-wrap .hero-text {
+    width: 475px;
+}
+
+.action-wrap .intro {
+    margin: 24px 0;
+    width: 371px;
+    font-weight: 500px;
+}
+
+.credits {
+    font-size: 15px;
+    text-align: center;
+}
+
+.footer {
+    padding: 120px 0;
+}
+
+/* Responsive */
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 51px;
+    }
+    .button {
+        margin: 0 auto;
+    }
+    .action-wrap {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 101px 144px;
+    }
+    .hero-text h2 {
+        text-align: center;
+    }
+    .hero-text{
+        width: 100%;
+    }
+    .hero-text .subtitle {
+        width: auto; 
+        margin: 30px auto;
+    }
+    .action-wrap .intro {
+        margin: 24px auto;
+    }
+    .logo{
+        margin: 0 auto;
+        max-width: 182px;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .feature {
+        flex-direction: column;
+        text-align: center;
+    }
+    .features-container {
+        width: auto;
+    }
+    .action-wrap {
+        gap: 50px;
+        margin-top: 90px;
+    }
+    .wrapper{
+        margin-top: 50px;
+    }
+    .features .container {
+        padding-top: 90px;
+    }
+    .footer {
+        padding: 90px 0;
+    }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 15px;
+    }
+    .hero-image {
+        width: 100%;
+        display: block;
+    }
+    .hero-text {
+        width: auto;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size: 38px;
+    }
+    .action-wrap img {
+        width: 201px;
+    }
+    .action-wrap {
+        padding: 70px 20px;
+    }
+    .action-wrap .hero-text {
+        width: 100%;
+    }
+    .action-wrap .intro {
+        width: auto;
+    }
+    .footer {
+        padding: 90px 0;
+    }
+    .wrapper {
+        margin-top: 50px;
+    }
+}
